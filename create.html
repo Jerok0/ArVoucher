@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
+        <script src="js/sha256.min.js"></script>
+        <script src="js/aes.js"></script>
+        <title>Ar Voucher</</title>
+    </head>
+    <body>
+		<nav class="navbar navbar-dark bg-dark">
+	<a class="navbar-brand mb-0 h1" href="index.html">Ar Voucher</a>
+	</nav>
+        <div class="container" style="padding-top: 20px;">
+            <h3 style="padding-bottom: 10px;" id="voucher_title">Create A Voucher</h3>
+            <form onsubmit="return false">
+                <div class="form-group">
+                    <label><b>Voucher Name</b></label>
+                    <input class="form-control" id="title_input">
+                </div>
+
+                <div class="form-group">
+                    <label><b>Voucher Amount (AR)</b></label>
+                    <input class="form-control" id="reward_input">
+                </div>
+
+                <div class="form-group">
+                    <label><b>Voucher Code</b></label>
+                    <input class="form-control" id="solution_input">
+                </div>
+
+                <b>Upload Wallet File</b> <input type="file" id="keyfile" />
+                <br><br>
+
+                <button class="btn btn-success" onclick="submitvoucher()">Create Voucher</button>
+            </form>
+        </div>
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/create.js"></script>
+    </body>
+</html>
